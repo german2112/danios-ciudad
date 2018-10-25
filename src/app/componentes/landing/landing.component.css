@@ -1,0 +1,43 @@
+body, html {
+  height: 100%; }
+
+img {
+  max-width: 100%; }
+
+
+.cover {
+  background: #222 url('./../../../img/ciudad.jpg') center center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center; }
+
+.cover-texto {
+  width: 100%;
+  padding: 5rem 0; }
+
+#acerca-de {
+  background: url('./../../../img/acerca-de.jpg') center center no-repeat;
+  background-size: cover; }
+
+.texto-acerca-de {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1.875rem; }
+
+.texto-cover {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.875rem; }
+
+.contenido-seccion {
+  padding: 5rem 0; }
+
+.footer-main {
+  background: #222;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2.5rem 0; }
+
+/*# sourceMappingURL=main.css.map */

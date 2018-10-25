@@ -1,0 +1,67 @@
+
+.login-form {
+  width: 400px;
+  margin: 100px auto;
+}
+.login-form img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.login-form form {
+  margin-bottom: 15px;
+  background: #f7f7f7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+.login-form h2 {
+  margin: 0 0 15px;
+  text-align: center;
+}
+.login-form .btn {
+  min-height: 38px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.form-control, .btn {
+  font-size: 15px;
+  font-weight: bold;
+  min-height: 38px;
+  min-width: 150px;
+  border-radius: 2px;
+}
+
+.nav {
+  margin-bottom: 15px;
+  background: #f7f7f7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  padding-bottom: 0px;
+}
+.nav a {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#home h1 {
+  text-align: center;
+  color: white;
+}
+
+.img-responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+
+
+.descBox {
+  height: 200px;
+}
+
+/*# sourceMappingURL=styles.css.map */

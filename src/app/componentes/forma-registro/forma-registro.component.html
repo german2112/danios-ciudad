@@ -1,0 +1,68 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Affectation Reporter</title>
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  
+  
+  </head>
+  
+  <body>
+  <div class="login-form">
+      <form >
+    <!--<div class="form-row">-->
+          
+          <h1>Registro</h1>
+          
+          <div class="form-group">
+              <label for="inputUserName">Nombre de usuario</label>
+              <input type="text" class="form-control" id="inputUserName" name ="inputUserName" placeholder="Jose Pérez"  >
+              
+          </div>
+    
+          <div class="form-group ">
+              <label for="inputName">Nombre Completo</label>
+              <input  type="text" name="nombre" ng-model="model.nombre" class="form-control" >
+                
+            
+          </div>
+          <div class="form-group ">
+              <label for="inputPswd">Password</label>
+              <input  type="password" class="form-control" id="inputPswd" placeholder="2!*;D?=Fam%fLZ$7">
+          </div>
+          <div class="form-group ">
+              <label for="inputEmail">E-mail</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@dominio.com">
+          </div>
+          <div class="form-group ">
+              <label for="inputUserType">Delegación</label>
+              <input type="text" id="inputDelegacion" class="form-control">
+          </div>
+    
+          <a [routerLink]="['/registro-exitoso']"><button type="submit" class="btn btn-primary">Registrarme</button></a>
+      </form>
+  </div>
+      
+      
+  <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+          });
+        }
+
+        function Ctrl($scope){
+            $scope.model.correo = "ejemplo@correo.com";
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiMZRQ4isxUD6SPUgE9WNaHe_opplAa0&callback=initMap"
+      async defer></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>

@@ -1,0 +1,31 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<app-nav-bar></app-nav-bar>
+<div class="container">
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Categoría</th>
+      <th scope="col">Subcategoría</th>
+      <th scope="col">Ubicación</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor = "let reporte of reportes; let i = index" [attr.data-index]="i" [ngStyle]="i%2 ==0 ? tableStyle1 : tableStyle2">
+      <th scope="row">{{i+1}}</th>
+      <td>{{reporte.categoria}}</td>
+      <td>{{reporte.subcategoria}}</td>
+      <td>{{reporte.ubicacion}}</td>
+    </tr>
+    </tbody>
+
+</table>
+</div>

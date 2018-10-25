@@ -1,0 +1,150 @@
+
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body>    
+      <!-- header --> 
+      
+    <div class="cover">
+        <div class="cover-texto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="texto-cover">
+                            <h1 class="display-3">Daños de la ciudad</h1>
+                            <p class="lead">Informa a la ciudad acerca de daños de la misma.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+      
+      <!-- navbar -->
+      
+    <div class="navbar navbar-expand-lg navbar-dark navbar-inverse bg-dark">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#acerca-de">Acerca de <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pasos">Pasos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/iniciar-sesion']">Comenzar</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="buscar">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+      
+      <!-- body -->
+      
+    <div id ="pasos">
+        <div class="contenido-seccion">
+            <div class="container">
+                <h2>Pasos</h2>
+                <p class="lead">Somos una empresa enfocada en mejorar los detalles de la ciudad de México haciendo que nuestros usuarios reporten problemas cotidianos de las calles de esta manera comunicando a la ciudad acerca del problema insitando a que sea resuelto.</p>
+                <div class="row">
+                    <div class="col-sm-12">
+      
+      <!-- Cartas -->
+      
+                        <div class="card-group">
+                          <div class="card">
+                            <img class="card-img-top" src="http://i68.tinypic.com/2qia33d.jpg" alt="Card image cap"/>
+                            <div class="card-body">
+                              <h5 class="card-title">Identifica el problema</h5>
+                              <p class="card-text">Identifica el problema que quieras informar a la comunidad</p>
+
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img class="card-img-top" src="http://i67.tinypic.com/34istcg.png" alt="Card image cap"/>
+                            <div class="card-body">
+                              <h5 class="card-title">Ingresalo a la plataforma</h5>
+                              <p class="card-text">Súbelo a esta aplicación para que sea visible a todos nuestros usuarios y generar interés acerca del problema.</p>
+
+                            </div>
+                          </div>
+                            <div class="card">
+                                <img class="card-img-top" src="http://i64.tinypic.com/ny71hk.jpg" alt="Card image cap"/>
+                                <div class="card-body">
+                                  <h5 class="card-title">Crea una  comunidad conciente del problema</h5>
+                                  <p class="card-text">Ahora habrá un grupo de personas enteradas acerca del problema y generará interés en su pronta resolución.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+      
+    <!-- Acerca de -->
+      
+    <div id="acerca-de">
+        <div class="contenido-seccion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="texto-acerca-de">
+                            <h3>Acerca de</h3>
+                            <p class="lead">En este proyecto queremos solucionar los problemas que se viven cotidianamente en las calles por ejemplo baches, árboles caidos, inundaciones, etc. haciendo una red de personas que suban y se enteren de estos problemas para generar interés en ellos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>Creado por alumnos del tecnológico de monterrey</p>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li>Inicio</li>
+                        <li>Nosotros</li>
+                        <li>Contacto</li>
+                        <li>Cuenta</li>
+                        <li>Configuración</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <p>Esta es la primera parte de la entrega del proyecto la cual tendrá valor para el primer parcial.</p>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li>Germán</li>
+                        <li>Emilio</li>
+                        <li>Oscar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      
+      
+      
+    
+  </body>

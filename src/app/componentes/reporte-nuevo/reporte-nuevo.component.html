@@ -1,0 +1,98 @@
+
+<app-nav-bar></app-nav-bar>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  
+  
+  <style type="text/css">
+    
+    .login-form {
+      width: 400px;
+        margin: 100px auto;
+    }
+      .login-form form {
+        margin-bottom: 15px;
+          background: #f7f7f7;
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+          padding: 30px;
+      }
+      .login-form h2 {
+        margin: 0 0 15px;
+        text-align: center;
+      }
+      .form-control, .btn {
+          min-height: 38px;
+          border-radius: 2px;
+      }
+      .btn {        
+          font-size: 15px;
+          font-weight: bold;
+      }
+
+      .img-responsive {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
+      }
+  </style>
+  </head>
+
+  <body background="mexicoCity1.jpg">
+    <div class="login-form">
+        <form>
+      <!--<div class="form-row">-->
+            <h1>Reporte</h1>
+            <div class="form-group ">
+                <label for="inputCatego">Categoria</label>
+                <select id="inputCatego" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group ">
+                <label for="inputSubCat">Sub categria</label>
+                <select id="inputSubCat" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+      
+            <div class="form-group ">
+                <label for="inputDes">Descripcion</label>
+                <input type="text" class="form-control" id="inputDes" placeholder="1234 Main St">
+            </div>
+            <div class="form-group ">
+                <label for="inputDes">Ubicacion</label>
+                <div id="map" style="width:350px;height:400px;"></div>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+      
+            <button type="submit" class="btn btn-primary" [routerLink]="['/reporte-exitoso']" >Reportar</button>
+        </form>
+    </div>
+        
+        
+    <script>
+          var map;
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: -34.397, lng: 150.644},
+              zoom: 8
+            });
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiMZRQ4isxUD6SPUgE9WNaHe_opplAa0&callback=initMap"
+        async defer></script>
+    </body>
